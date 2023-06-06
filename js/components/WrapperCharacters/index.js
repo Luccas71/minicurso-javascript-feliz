@@ -1,7 +1,8 @@
-const pathGueio = 'images/gueio.png'
-const gueio = Character`
-    width: 18%;
-    ${pathGueio}
+const pathImage = 'images/goku.png'
+const image = Character`
+    width: 180px;
+    height: 250px;
+    ${pathImage}
 `
 
 const WrapperCharacters = (css, children) => (`
@@ -11,5 +12,7 @@ const WrapperCharacters = (css, children) => (`
 const wrapperCharacters = WrapperCharacters`
     display: flex;
     justify-content: space-evenly;
-    ${gueio + gueio + gueio}
+    width: 100%;
+    ${image + image + image}
 `
+
